@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_cat"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/garfield_lexus" />
+
+            <TextView
+                android:id="@+id/name_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_cat"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Garfield Lexus"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/ic_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_cat"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_cat"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="35dp"
+                android:layout_toRightOf="@id/ic_location"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="4517 Washington Ave. Manchester, Kentucky 39495"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="24sp"
+                android:layout_below="@id/ic_location"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="35dp"
+                android:id="@+id/head_description"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kucing yang satu ini sangat agresif dan sangat menggemaskan menjadi salah satu pilihan bagi para pecinta kucing yang ingin selalu menemani hari-hari mu."
+                android:layout_below="@id/head_description"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:justificationMode="inter_word"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga"
+                android:fontFamily="@font/montserrat_medium"
+                android:id="@+id/head_harga"
+                android:layout_below="@id/description"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="35dp"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="35dp"
+                android:layout_toRightOf="@+id/head_harga"
+                android:text="IDR 15.000.000"
+                android:textSize="24sp"
+                android:textAlignment="textEnd"/>
+
+            <Button
+                android:layout_width="346dp"
+                android:layout_height="73dp"
+                android:backgroundTint="#B4CEC6"
+                android:layout_below="@id/head_harga"
+                android:layout_marginBottom="42dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Adopsi Dia"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_medium"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:drawableEnd="@drawable/ic_next"
+                android:drawablePadding="5dp"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_catshop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B4CEC6">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#B4CEC6"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logo"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
